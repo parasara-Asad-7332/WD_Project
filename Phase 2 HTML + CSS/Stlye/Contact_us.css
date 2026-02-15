@@ -1,0 +1,270 @@
+body {
+  background: linear-gradient(to bottom, #9db7cc, #c7d3db, #ded9d1);
+}
+
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+}
+
+.nav{
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  height: 30px;
+  width: 300px;
+  background-color:  rgb(34, 33, 36);
+  border-radius: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: 1s;
+}
+
+.nav:hover{
+  background-color: #4fb0ff;
+  box-shadow: 10px 6px 3px  rgb(38, 40, 61) ;
+}
+
+
+.box{
+  /* height: 60vh;*/
+  width: 60vw; 
+  margin: 0px auto;
+  /* border: 2px solid black; */
+}
+.box1{
+  /* height: 52vh; */
+  /* width: 50vw; */
+  margin: 35px auto;
+  background-color: #c7d3db;
+  transition: 1.2s;
+  border-radius: 35px;
+}
+.box1:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 4px 1px #0a0a0a;
+}
+fieldset{
+  border: 2px solid black;
+  border-radius: 35px;
+}
+
+legend{
+  font-size: larger;
+}
+
+tr{
+  font-size: large;
+  
+}
+#name1,#name2,#number,#email{
+  border-radius: 35px;
+  border: 2px solid black;
+  width: 18vw;
+  height: 3vh;
+  font-size: 15px;
+  text-align: center;
+}
+
+#age{
+  height: 4vh;
+  width: 10vw;
+  border-radius: 35px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#people{
+  width: 5vw;
+  height: 4vh;
+  align-items: center;
+}
+.box2,.box3{
+  /* height: 43vh; */
+  /* width: 50vw; */
+  margin: 35px auto;
+  background-color: #c7d3db;
+  transition: 1.2s;
+  border-radius: 35px;
+}
+.box2:hover,.box3:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 4px 1px #101010;
+}
+
+.s{
+  height: 10vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.s1{
+  height: 10vh;
+  text-align: center;
+  width: 30vw;
+}
+
+
+#submit,#reset{
+  background-color: #9db7cc;
+  border-radius: 35px;
+  height: 5vh;
+  width: 8vw;
+  transition: 1.5s;
+}
+#submit:hover{
+  background-color: aqua;
+}
+#reset:hover{
+  background-color: rgb(160, 9, 9);
+}
+
+.contect{
+  height: 45vh;
+  width: 40vw;
+  margin: 0px auto;
+  background-color: #9db7cc;
+  border-radius: 35px;
+  transition: 1.2s;
+  position: relative;
+  
+}
+.contect:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 4px 1px #0a0a0a;
+}
+address{
+  font-size: 25px;
+  padding: 90px;
+  text-align: center;
+}
+
+.img{
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  animation-name: img;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.img img{
+  border-radius: 50%;
+}
+
+@keyframes img{
+  0%{
+    top: 0px;
+    left: 0px;
+  }
+  25%{
+    top: 0px;
+    left: calc(40vw - 80px);
+  }
+  50%{
+    top: calc(45vh - 80px);
+    left: calc(40vw - 80px);
+  }
+  75%{
+    top: calc(45vh - 80px);
+    left: 0px;
+  }
+  100%{
+    top: 0px;
+    left: 0px;
+  }
+}
+
+@media (max-width:768px){
+  nav{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 8px;
+    text-align: center;
+  }
+  .box1{
+    height: 56vh;
+    width: 80vw;
+    position: relative;
+    right: 60px;
+  }
+  #name1,#name2,#number,#email{
+    font-size: 12px;
+    width: 32vw;
+  }
+  .box2{
+    height: 50vh;
+    width: 76vw;
+    position: relative;
+    right: 50px;
+  }
+  .box3{
+    height: 23vh;
+    width: 80vw;
+    position: relative;
+    right: 60px;
+  }
+  #feedback{
+    height: 15vh;
+    width: 40vw;
+  }
+  #box2{
+    height: 43vh;
+  }
+  .s{
+    display: flex;
+    justify-content: center;
+  }
+  
+  #submit,#reset{
+    height: 8vh;
+    width: 15vw;
+  }
+  
+  .contect{
+    height: 60vh;
+    width: 80vw;
+  }
+  .img{
+    font-size: 15px;
+    position: absolute;
+    animation-name: img;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes img {
+    0%{
+      top: 0px;
+      left: 0px;
+    }    
+    25%{
+      top: 0px;
+      left: calc(80vw - 80px);
+    }
+    50%{
+      top: calc(60vh - 80px);
+      left: calc(80vw - 80px);
+    }
+    75%{
+      top: calc(60vh - 80px);
+      left: 0px;
+    }
+    100%{
+      top: 0px;
+      left: 0px;
+    }
+  }
+  
+  
+}

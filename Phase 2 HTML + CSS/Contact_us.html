@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="India, Incredible India, India tourism" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="./Stlye/Contact_us.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="./Home.html" class="nav">Home</a>
+      <a href="./touristplaces.html" class="nav">Tourist places</a>
+      <a href="./images.html" class="nav">Images</a>
+      <a href="./Travel_info.html" class="nav">Travel information</a>
+      <a href="./About.html" class="nav">About us</a>
+      <a href="./Contact_us.html" class="nav">Contact us</a>
+    </nav>
+    <header>
+      <h1>Contact us</h1>
+    </header>
+    <section>
+      <div class="box">
+        <div class="box1">
+          <fieldset>
+            <legend>contact form</legend>
+            <form action="" align="center" id="mainform">
+              <table cellpadding="12" cellspacing="4" align="center">
+                <tr>
+                  <td><label for="name1">Enter First name: </label></td>
+                  <td><input type="text" id="name1" required pattern="[A-Za-z]{2,30}" title="Only letters minimum 2"></td>
+                </tr>
+                <tr>
+                  <td><label for="name2">Enter Sceond name: </label></td>
+                  <td><input type="text" id="name2" required pattern="[A-Za-z]{2,30}" title="Only letters minimum 2"></td>
+                </tr>
+                <tr>
+                  <td><label for="number">Enter moblie number </label></td>
+                  <td><input type="tel" id="number" required pattern="[0-9]{10}" title="Enter valid 10 digit mobile number"></td>
+                </tr>
+                <tr>
+                  <td><label for="email">Enter e-mail</label></td>
+                  <td><input type="email" id="email" required></td>
+                </tr>
+                <tr>
+                  <td><label for="age">Enter Age</label></td>
+                  <td><input id="age" type="number" max="60" min="18" required></td>
+                </tr>
+                <tr>
+                  <td>Enter Gender</td>
+                  <td>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" required>
+                    <label for="Female">Female</label>
+                    <input type="radio" id="Female" name="gender">
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <section>
+      <div class="box">
+        <div class="box2">
+          <fieldset>
+            <legend>Travel information</legend>
+            <form action="" id="mainform">
+              <table cellpadding="10" cellspacing="4" align="center">
+                <tr>
+                  <td>Type Travel</td>
+                  <td><label for="solo">Solo</label></td>
+                  <td><input type="radio" id="solo" name="travel_type" value="Solo" required></td>
+                  <td><label for="family">Family</label></td>
+                  <td><input type="radio" id="family" name="travel_type" value="Family"></td>
+                  <td><label for="friends">Friends & Group</label></td>
+                  <td><input type="radio" id="friends" name="travel_type" value="Friends"></td>
+                </tr>
+                <tr>
+                  
+                </tr>
+                <tr>
+                  <td>Planned month of visit</td>
+                  <td colspan="7">
+                    <select id="month" name="month" required>
+                      <option disabled selected>--select Month--</option>
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>July</option>
+                      <option>August</option>
+                      <option>September</option>
+                      <option>October</option>
+                      <option>November</option>
+                      <option>December</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>How many people travel</td>
+                  <td colspan="7">
+                    <input type="number" id="people" name="people" min="1" required>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <section>
+      <div class="box">
+        <div class="box3">
+            <fieldset>
+              <legend>Your message</legend>
+              <form action="">
+              <table>
+              <tr>
+              <td><label for="feedback">Enter Message/Questions: </label></td>
+              <td><textarea id="feedback" rows="10" cols="50" required minlength="10"></textarea></td>
+              </tr>
+              </table>
+              </form>
+            </fieldset>
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <section>
+      <div class="box">
+        <div class="box2" id="box2">
+            <fieldset>
+              <legend>Docment</legend>
+              <form action="">
+                <table cellpadding="12" cellspacing="4">
+                <tr>
+                 <td><label for="pdf">Travel information manual pdf</label></td>
+                  <td><a target="_blank" href="./media/travel_information_manual.pdf" download="pdf">download Click here </a></td> 
+                </tr>
+                <tr>
+                  <td>Upload Your image </td>
+                  <td><input type="file" name="image" accept="image/*" required></td>
+                </tr>
+                <tr>
+                  <td>Upload Adhar card</td>
+                  <td><input type="file" name="abhaar" accept=".pdf" required></td>
+                </tr>
+                </table>
+              </form>
+            </fieldset>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="s">
+        <div class="s1">
+          <form action="">
+            <table cellpadding="12" cellspacing="4" >
+            <tr>
+              <td>
+              <input type="submit" id="submit" form="mainform">
+              </td>
+              <td><input type="reset" id="reset" form="mainform"></td>
+            </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </section>
+    <br><br>
+    <section>
+      <div class="contect">
+        <div class="img">
+          <img src="./images/myimg.png" alt="" height="100%" width="100%">
+        </div>
+        <address>
+                 Name: parasara Mohamad Asad
+                <br>
+                City: Wankaner 
+                <br>
+                Distaric: Morbi
+                <br>
+                Moblie Number: 7990578624
+                <br>
+                <a target="_blank" href="https://mail.google.com/mail/u/0/#search/asadparasara345%40gmail.com">Email id: asadparasara345@gmail.com</a>
+        </address>
+      </div>
+    </section>
+    <footer>
+      <p align="center">
+        &copy; 2026 Incredible India Project |<abbr
+          title="Project of web design samplie project of HTML"
+          >B.Tech Semester-2</abbr
+        >
+      </p>
+    </footer>
+  </body>
+</html>

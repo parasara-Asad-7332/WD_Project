@@ -29,6 +29,30 @@ nav{
   background-color: #4fb0ff;
   box-shadow: 10px 6px 3px  rgb(38, 40, 61) ;
 }
+
+.box{
+  height: 60vh;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+img{
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.card1{
+  border-radius: 25px;
+  height: 60vh;
+  width: 25vw;
+  background-color: #4fb0ff;
+  transition: 0.5s;
+}
+.card1:hover{
+  transform:translateY(10px);
+  box-shadow: 10px 15px 5px rgb(177, 156, 156);
+}
 @media (max-width:768px){
   nav{
     height: 40px;

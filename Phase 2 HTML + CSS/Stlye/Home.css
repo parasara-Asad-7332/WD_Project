@@ -36,7 +36,7 @@ nav{
 }
 
 .overview{
-  background-color: rgb(106, 119, 119);
+  background-color: rgb(174, 219, 219);
   height: 20vh;
   width: 90vw;
   margin: 0px auto;
@@ -46,7 +46,7 @@ nav{
   padding: 20px;
 }
 .overview:hover{
-  box-shadow: 10px 6px 1px rgb(29, 34, 34);
+  box-shadow: 10px 6px 1px rgb(139, 173, 173);
 }
 .img1 {
   border: 2px solid black;
@@ -62,7 +62,7 @@ nav{
 .box {
   height: 60vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .box1 {
   font-family:

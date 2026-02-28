@@ -57,6 +57,14 @@ h2{
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+p::selection{
+  background-color: black;
+  color: #1b87e0;
+}
+
+footer{
+  font-size: large;
+}
 
 @keyframes change {
   0%{

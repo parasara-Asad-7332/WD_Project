@@ -63,6 +63,14 @@ li{
 .box1:hover{
   transform: scale(1.1);
 }
+p::selection{
+  background-color: black;
+  color: #1b87e0;
+}
+
+footer{
+  font-size: large;
+}
 
 @media (max-width:480px){
   nav{

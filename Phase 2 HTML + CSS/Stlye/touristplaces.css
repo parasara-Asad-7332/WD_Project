@@ -30,7 +30,14 @@ nav{
   background-color: #4fb0ff;
   box-shadow: 10px 6px 3px  rgb(38, 40, 61) ;
 }
+p::selection{
+  background-color: black;
+  color: #1b87e0;
+}
 
+footer{
+  font-size: large;
+}
 
 .box{
   height: 70vh;

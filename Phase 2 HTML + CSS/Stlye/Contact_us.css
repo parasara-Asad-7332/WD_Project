@@ -171,6 +171,14 @@ span{
 .img img{
   border-radius: 50%;
 }
+p::selection{
+  background-color: black;
+  color: #1b87e0;
+}
+
+footer{
+  font-size: large;
+}
 
 @keyframes img{
   0%{

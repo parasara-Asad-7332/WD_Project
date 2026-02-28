@@ -1,5 +1,6 @@
-body {
-  background: linear-gradient(to bottom, #9db7cc, #c7d3db, #ded9d1);
+body{
+background: #9a97de;
+background: linear-gradient(90deg, rgba(154, 151, 222, 1) 0%, rgba(188, 188, 227, 1) 45%, rgba(125, 219, 240, 1) 100%);
 }
 nav{
   display: flex;
@@ -30,17 +31,12 @@ nav{
   box-shadow: 10px 6px 3px  rgb(38, 40, 61) ;
 }
 
-h1{
-  color: coral;
-}
 
 .box{
   height: 70vh;
   width: 55vh;
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  /* background-color: #916115; */
 }
 
 .front, .back{
@@ -59,6 +55,8 @@ h1{
   border-radius: 25px;
   background-color:#9db7cc;
   transform: rotateY(180deg);
+  background: #12a6e0;
+  background: linear-gradient(90deg, rgba(18, 166, 224, 1) 0%, rgba(87, 199, 89, 1) 45%, rgb(64, 168, 106) 92%);
 }
 
 .box:hover .front{
@@ -80,14 +78,12 @@ h1{
 
 h2{
   font-family:Arial, Helvetica, sans-serif;
-  color: blueviolet;
 }
-
 li{
   font-size: 20px;
   padding: 14px
 }
-@media (max-width:768px){
+@media (max-width:480px){
   nav{
     height: 40px;
     width: 100%;

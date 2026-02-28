@@ -1,5 +1,6 @@
-body {
-  background: linear-gradient(to bottom, #9db7cc, #c7d3db, #ded9d1);
+body{
+background: #9a97de;
+background: linear-gradient(90deg, rgba(154, 151, 222, 1) 0%, rgba(188, 188, 227, 1) 45%, rgba(125, 219, 240, 1) 100%);
 }
 
 nav{
@@ -150,6 +151,12 @@ address{
   padding-left: 100px;
 }
 
+#mail{
+  text-decoration: none;
+}
+span{
+  color: #0a0a0a;
+}
 .img{
   height: 50px;
   width: 50px;
@@ -188,7 +195,7 @@ address{
   }
 }
 
-@media (max-width:768px){
+@media (max-width:480px){
   nav{
     height: 40px;
     width: 100%;

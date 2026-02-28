@@ -1,5 +1,6 @@
-body {
-  background: linear-gradient(to bottom, #9db7cc, #c7d3db, #ded9d1);
+body{
+background: #9a97de;
+background: linear-gradient(90deg, rgba(154, 151, 222, 1) 0%, rgba(188, 188, 227, 1) 45%, rgba(125, 219, 240, 1) 100%);
 }
 
 nav{
@@ -30,7 +31,40 @@ nav{
   background-color: #4fb0ff;
   box-shadow: 10px 6px 3px  rgb(38, 40, 61) ;
 }
-@media (max-width:768px){
+
+.box1{
+  margin: 0px auto;
+  height: 40vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  transition: 1s;
+  background: #12a6e0;
+  background: linear-gradient(90deg, rgba(18, 166, 224, 1) 0%, rgba(87, 199, 89, 1) 45%, rgba(83, 237, 145, 1) 92%);
+}
+.box2{
+  height: 38vh;
+  width: 20vw;
+}
+img{
+  border-radius: 25px;
+}
+li{
+  padding: 8px;
+}
+.box3{
+  height: 38vh;
+  width: 38vw;
+  position: relative;
+  top: 30px;
+}
+.box1:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width:480px){
   nav{
     height: 40px;
     width: 100%;

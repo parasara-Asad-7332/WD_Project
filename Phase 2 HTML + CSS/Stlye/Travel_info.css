@@ -2,12 +2,11 @@ body{
 background: #9a97de;
 background: linear-gradient(90deg, rgba(154, 151, 222, 1) 0%, rgba(188, 188, 227, 1) 45%, rgba(125, 219, 240, 1) 100%);
 }
+
 nav{
   display: flex;
-  justify-content: space-evenly;
   height: 40px;
   width: 100%;
-  align-items: center;
 }
 
 .nav{
@@ -19,22 +18,37 @@ nav{
   width: 300px;
   background-color:  rgb(34, 33, 36);
   border-radius: 30px;
-  align-items: center;
   display: flex;
   justify-content: center;
-  position: relative;
   transition: 1s;
+  
+}
+
+.nav:hover{
+  background-color: #4fb0ff;
+  box-shadow: 10px 6px 3px  rgb(38, 40, 61) ;
+  border: 2px solid  rgb(38, 40, 61);
+}
+
+tr:nth-child(odd){
+  background-color: #27a892;
 }
 
 tr:nth-child(odd):hover{
-  background-color: #1570bb;
+  background-color: #16e435;
 }
+tr:nth-child(even):hover{
+  background-color: #06c75d;
+}
+
 tr:nth-child(even):hover{
   background-color: rgb(202, 44, 44);
 }
 
 table{
   transition: 0.8s;
+  background: linear-gradient(90deg,rgb(111, 169, 250) 0%, rgb(79, 79, 236) 53%, rgba(15, 204, 242, 1) 100%);
+  text-align: center;
 }
 
 h2{
@@ -79,10 +93,7 @@ table:hover{
   box-shadow: 8px 6px 3px ;
 }
 
-.nav:hover{
-  background-color: #4fb0ff;
-  box-shadow: 10px 6px 3px  rgb(38, 40, 61);
-}
+
 
 
 

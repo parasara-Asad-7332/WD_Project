@@ -5,10 +5,8 @@ background: linear-gradient(90deg, rgba(154, 151, 222, 1) 0%, rgba(188, 188, 227
 
 nav{
   display: flex;
-  justify-content: space-evenly;
   height: 40px;
   width: 100%;
-  align-items: center;
 }
 
 .nav{
@@ -20,28 +18,25 @@ nav{
   width: 300px;
   background-color:  rgb(34, 33, 36);
   border-radius: 30px;
-  align-items: center;
   display: flex;
   justify-content: center;
-  position: relative;
   transition: 1s;
+  
 }
 
 .nav:hover{
   background-color: #4fb0ff;
   box-shadow: 10px 6px 3px  rgb(38, 40, 61) ;
+  border: 2px solid  rgb(38, 40, 61);
 }
+
 
 
 .box{
-  /* height: 60vh;*/
   width: 60vw; 
   margin: 0px auto;
-  /* border: 2px solid black; */
 }
 .box1{
-  /* height: 52vh; */
-  /* width: 50vw; */
   margin: 35px auto;
   background-color: #c7d3db;
   transition: 1.2s;
@@ -92,8 +87,6 @@ input:focus{
   align-items: center;
 }
 .box2,.box3{
-  /* height: 43vh; */
-  /* width: 50vw; */
   margin: 35px auto;
   background-color: #c7d3db;
   transition: 1.2s;
@@ -101,7 +94,7 @@ input:focus{
 }
 .box2:hover,.box3:hover{
   transform: scale(1.1);
-  box-shadow: 5px 5px 4px 1px #101010;
+  box-shadow: 5px 5px 4px #101010;
 }
 
 .s{
@@ -114,6 +107,8 @@ input:focus{
   height: 10vh;
   text-align: center;
   width: 30vw;
+  display: flex;
+  justify-content: center;
 }
 
 

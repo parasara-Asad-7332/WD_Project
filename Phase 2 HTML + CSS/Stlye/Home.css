@@ -1,44 +1,62 @@
-body{
-background: #9a97de;
-background: linear-gradient(90deg, rgba(154, 151, 222, 1) 0%, rgba(188, 188, 227, 1) 45%, rgba(125, 219, 240, 1) 100%);
-}
-h1 {
-  color: rgb(0, 0, 0);
-  text-align: center;
+body {
+  background: #9a97de;
+  background: linear-gradient(
+    90deg,
+    rgba(154, 151, 222, 1) 0%,
+    rgba(188, 188, 227, 1) 45%,
+    rgba(125, 219, 240, 1) 100%
+  );
 }
 
-nav{
+nav {
   display: flex;
-  justify-content: space-evenly;
   height: 40px;
   width: 100%;
-  align-items: center;
 }
 
-.nav{
+.nav {
   text-decoration: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: larger;
   color: rgb(255, 255, 255);
   height: 30px;
   width: 300px;
-  background-color:  rgb(34, 33, 36);
+  background-color: rgb(34, 33, 36);
   border-radius: 30px;
-  align-items: center;
   display: flex;
   justify-content: center;
-  position: relative;
   transition: 1s;
 }
 
-.nav:hover{
+.nav:hover {
   background-color: #4fb0ff;
-  box-shadow: 10px 6px 3px  rgb(38, 40, 61) ;
+  box-shadow: 10px 6px 3px rgb(38, 40, 61);
+  border: 2px solid rgb(38, 40, 61);
 }
 
-.overview{
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.overview {
   background: #40b43a;
-  background: linear-gradient(90deg, rgb(108, 225, 102) 0%, rgb(7, 245, 170) 50%, rgb(189, 250, 97) 100%);
+  background: linear-gradient(
+    90deg,
+    rgb(108, 225, 102) 0%,
+    rgb(7, 245, 170) 50%,
+    rgb(189, 250, 97) 100%
+  );
   height: 20vh;
   width: 80vw;
   margin: 0px auto;
@@ -47,8 +65,8 @@ nav{
   transition: 1s;
   padding: 20px;
 }
-.overview:hover{
-  box-shadow: 10px 6px 4px #aaeaa6;
+.overview:hover {
+  box-shadow: 10px 6px 4px rgb(7, 250, 170);
   transform: scale(1.1);
 }
 .img1 {
@@ -59,7 +77,7 @@ nav{
 
 .img1:hover {
   transform: scale(1.05);
-  box-shadow: 5px 8px 10px rgb(43, 42, 40, 0.5);
+  box-shadow: 10px 8px 10px rgb(43, 42, 40, 0.5);
 }
 
 .box {
@@ -82,80 +100,77 @@ nav{
     sans-serif;
   height: 50vh;
   width: 50vh;
-    background: #40b43a;
-  background: linear-gradient(90deg, rgb(108, 225, 102) 0%, rgb(7, 245, 170) 50%, rgb(189, 250, 97) 100%);
+  background: #40b43a;
+  background: linear-gradient(
+    90deg,
+    rgb(108, 225, 102) 0%,
+    rgb(7, 245, 170) 50%,
+    rgb(189, 250, 97) 100%
+  );
   border: 2px solid black;
   border-radius: 25px;
   transition: 0.5s;
 }
 
 .box1:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
-li{
-padding: 10px;
+li {
+  padding: 10px;
 }
-p::selection{
+p::selection {
   background-color: black;
   color: #1b87e0;
 }
 
-footer{
+footer {
   font-size: large;
 }
 
-@media (max-width:980px){
-  nav{
+@media (max-width: 980px) {
+  nav {
     height: 40px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     font-size: 5px;
     text-align: center;
   }
-  .overview{
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .overview {
     height: 15vh;
     width: 80vw;
     font-size: 8px;
   }
-  .img1{
+  .img1 {
     height: 40vh;
     width: auto;
   }
-  .box{
+  .box {
     height: 30vh;
     display: flex;
     justify-content: space-evenly;
   }
-  .box1{
+  .box1 {
     height: 30vh;
     width: 25vw;
     font-size: 8px;
-   }
-   li{
-     padding-right: 20px;
-     padding: 2px;
-     font-size: 6px;
-    }
-    h2{
-      font-size: 10px;
-      text-align: center;
-   }
-   
-   
+    position: relative;
   }
-/*   
-  @media (min-width:400px){
-    .box{
-      height: 30vh;
-      display: flex;
-      justify-content: space-evenly;
-    }
-    .box1{
-      height: 40vh;
-      width: 25vw;
-      font-size: 12px;
-     }
-    
-} */
-
+  li {
+    padding-right: 20px;
+    padding: 2px;
+    font-size: 6px;
+  }
+  h2 {
+    font-size: 10px;
+    text-align: center;
+  }
+  .li {
+    position: absolute;
+    right: 18px;
+    width: 25vw;
+  }
+}
